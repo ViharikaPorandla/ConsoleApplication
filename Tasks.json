@@ -1,0 +1,18 @@
+import json
+
+def save_tasks_to_file():
+    with open('tasks.json', 'w') as f:
+        json_tasks = [task.__dict__ for task in tasks]
+        json.dump(json_tasks, f, indent=4)
+    print("Tasks saved to file.")
+
+def load_tasks_from_file():
+    try:
+        with open('tasks.json', 'r') as f:
+            json_tasks = json.load(f)
+            for item in json_tasks:
+                task = Task(**item)
+                tasks.append(task)
+        print("Tasks loaded from file.")
+    except FileNotFoundError:
+        print("No saved tasks found.")

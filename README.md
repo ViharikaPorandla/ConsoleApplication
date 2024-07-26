@@ -5,11 +5,11 @@ A simple console application for managing tasks with basic CRUD (Create, Read, U
 ## 🚀 Features
 
 - 🆕 **Create**: Add new tasks with a unique ID, name, and description.
-- 
+  
 - 👀 **Read**: View the list of all tasks, including their status (Incomplete or Complete).
-- 
+  
 - ✏️ **Update**: Modify task details such as name, description, or status.
-- 
+  
 - 🗑️ **Delete**: Remove tasks from the list.
 
 ## 🛠️ Installation
